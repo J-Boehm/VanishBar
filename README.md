@@ -5,9 +5,10 @@ VanishBar is a Win32 console application written in C++ that has the ability to 
 
 Usage: VanishBar.exe [-t] -h/-s
 
-
 -t    When this argument is given, messages won't be shown.
 
 -h    Hide the taskbar
 
 -s    Show the taskbar again
+
+The compiled application can be downloaded from the 'Debug' directory.
