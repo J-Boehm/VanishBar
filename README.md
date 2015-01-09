@@ -3,12 +3,16 @@ A tool to hide the Windows taskbar
 
 VanishBar is a Win32 console application written in C++ that has the ability to hide or show the Windows taskbar. This could be helpful in situations like the following one: You're trying to run LiteStep on top of Windows Explorer and you're having the problem that the Windows Explorer flickers through LiteStep.
 
+This tool can be used by creating and running a shortcut of 'VanishBar.exe' with the following arguments.
+
 Usage: VanishBar.exe [-t] -h/-s
 
--t    When this argument is given, messages won't be shown.
+* -t    When this argument is given, messages won't be shown.
+* -h    Hide the taskbar
+* -s    Show the taskbar again
 
--h    Hide the taskbar
+Example:
 
--s    Show the taskbar again
+* VanishBar.exe -t -h   Hides the taskbar without showing messages.
 
 The compiled application can be downloaded from the 'Debug' directory.
