@@ -1,0 +1,13 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly VanDLL, Version=0.0.*, Culture=Invariante Sprache (Invariantes Land): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class VanDLL.VanishCommands: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CheckTaskbar(): PrivateScope, Public, Static, HideBySig
+    HideTaskbar(): PrivateScope, Public, Static, HideBySig
+    ShowTaskbar(): PrivateScope, Public, Static, HideBySig

@@ -1,6 +1,5 @@
 // VanishBar.cpp : Definiert den Einstiegspunkt für die Konsolenanwendung.
 //
-
 #include "stdafx.h"
 #include <cstdlib>
 #include <iostream>
@@ -9,28 +8,24 @@
 #include <vector>
 #include <windows.h>
 
+#using <VanDLL.dll>
+
 using namespace std;
+using namespace VanDLL;
 
 int main(int argc, char *argv[])
 {
+	cout << "VanishBar 2.0 Console\n" <<
+		"__________________________________________________________________\n" << endl;
 	if (argc < 2)
 	{
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_GREEN);
-		cout << "VV   VV    A    NN   NN II   SSSSS HH   HH BBBBB      A    RRRRR  \n"
-				"VV   VV   AAA   NNN  NN II  SSSSSS HH   HH BBBBBBB   AAA   RRRRRRR\n"
-				"VV   VV  AAAAA  NNNN NN II SSS     HH   HH BB   BB  AAAAA  RR   RR\n"
-				"VVV VVV AA   AA NN NNNN II  SSSSS  HHHHHHH BBBBBB  AA   AA RRRRRR " << endl;
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN);
-		cout << " VV VV  AAAAAAA NN  NNN II     SSS HH   HH BB   BB AAAAAAA RR   RR\n"
-				" VVVVV  AA   AA NN   NN II SSSSSS  HH   HH BBBBBBB AA   AA RR   RR\n"
-				"  VVV   AA   AA NN   NN II SSSSS   HH   HH BBBBB   AA   AA RR   RR" << endl;
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
-		cout << "__________________________________________________________________" << endl;
-		cerr << "Usage: VanishBar [-t] -h/-s\n\n" <<
-				"	-t	Disable messages\n" <<
-				"	-s	Show taskbar\n" <<
-				"	-h	Hide taskbar\n" <<
-				"\n[] = Optional parameter" << endl;
+		cerr << "Usage: VanishBar [-t] -c|-h|-s\n\n" <<
+				"\t-t\tDisable messages\n" <<
+				"\t-c\tCheck if taskbar is visible or not\n" <<
+				"\t-s\tShow taskbar\n" <<
+				"\t-h\tHide taskbar\n" <<
+				"\n[] = Optional parameter" <<
+				"\n__________________________________________________________________" << endl;
 		system("pause");
 		return 1;
 	}
@@ -45,21 +40,33 @@ int main(int argc, char *argv[])
 			if (arg == "-t") showtext = false;
 			else if (arg == "-h")
 			{
-				ShowWindow(FindWindow(L"Shell_TrayWnd", L""), SW_HIDE);
+				VanishCommands::HideTaskbar();
 				if (showtext)
 				{
-					cout << "Your taskbar should be hidden now." << endl;
+					cout << "Your taskbar should be hidden now." <<
+							"\n__________________________________________________________________" << endl;
 					system("pause");
 				}
 			}
 			else if (arg == "-s")
 			{
-				ShowWindow(FindWindow(L"Shell_TrayWnd", L""), SW_SHOW);
+				VanishCommands::ShowTaskbar();
 				if (showtext)
 				{
-					cout << "Your taskbar should be visible now." << endl;
+					cout << "Your taskbar should be visible now." <<
+							"\n__________________________________________________________________" << endl;
 					system("pause");
 				}
+			}
+			else if (arg == "-c")
+			{
+				if (!showtext) cout << "ERROR: Disabling messages is senseless when using this parameter." << endl;
+				if (VanishCommands::CheckTaskbar())
+					cout << "Your taskbar is visible." << endl;
+				else
+					cout << "Your taskbar is not visible." << endl;
+				cout << "\n__________________________________________________________________" << endl;
+				system("pause");
 			}
 		}
 		return 0;
