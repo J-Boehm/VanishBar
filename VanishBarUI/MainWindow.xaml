@@ -10,7 +10,7 @@
         <!-- Caption bindings -->
         <CommandBinding Command="ApplicationCommands.Close" CanExecute="Close_CanExecute" Executed="Close_Executed"/>
         <CommandBinding Command="{x:Static local:MainWindow.Minimize}" CanExecute="Minimize_CanExecute" Executed="Minimize_Executed"/>
-        <!-- Hide/Show bindings -->
+        <!-- Hide/Show/Keep bindings -->
         <CommandBinding Command="{x:Static local:MainWindow.HideTaskbar}" CanExecute="HideTaskbar_CanExecute" Executed="HideTaskbar_Executed"/>
         <CommandBinding Command="{x:Static local:MainWindow.ShowTaskbar}" CanExecute="ShowTaskbar_CanExecute" Executed="ShowTaskbar_Executed"/>
     </Window.CommandBindings>
@@ -30,7 +30,7 @@
                             <Grid>
                                 <StackPanel Margin="4,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left">
                                     <TextBlock Text="{TemplateBinding Title}" Foreground="DarkGray" FontSize="14" FontFamily="Segoe UI"/>
-                                    <TextBlock Text="Makes your taskbar vanish." Foreground="DarkGray" FontSize="12" FontFamily="Segoe UI" Opacity="0.2" Margin="0,-5,0,0"/>
+                                    <TextBlock Text="Version 2.1" Foreground="DarkGray" FontSize="12" FontFamily="Segoe UI" Opacity="0.2" Margin="0,-5,0,0"/>
                                 </StackPanel>
                             </Grid>
                         </Border>
@@ -45,13 +45,15 @@
         </ControlTemplate>
     </Window.Template>
     <Grid>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="&#xf070; Hide taskbar" FontFamily="Fonts/FontAwesome-Webfont.ttf#FontAwesome"
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="&#xf070; Hide taskbar" FontFamily="Fonts/FontAwesome-Webfont.ttf#FontAwesome"
                     Width="100" Height="48"
                     Command="{x:Static local:MainWindow.HideTaskbar}"/>
-            <Button Content="&#xf06e; Show taskbar" FontFamily="Fonts/FontAwesome-Webfont.ttf#FontAwesome"
+                <Button Content="&#xf06e; Show taskbar" FontFamily="Fonts/FontAwesome-Webfont.ttf#FontAwesome"
                     Width="100" Height="48"
                     Command="{x:Static local:MainWindow.ShowTaskbar}"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

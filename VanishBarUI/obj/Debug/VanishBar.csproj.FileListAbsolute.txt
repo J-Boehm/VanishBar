@@ -1,0 +1,15 @@
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\Debug\VanishBar.exe.config
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\Debug\VanishBar.exe
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\Debug\VanishBar.pdb
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\VanishBar.csprojResolveAssemblyReference.cache
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\UiThemes\GenericTheme.baml
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\MainWindow.g.cs
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\App.g.cs
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\VanishBar_MarkupCompile.cache
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\VanishBar_MarkupCompile.lref
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\MainWindow.baml
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\VanishBar.g.resources
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\VanishBar.Properties.Resources.resources
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\VanishBar.csproj.GenerateResource.Cache
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\VanishBar.exe
+C:\Users\Jan\Documents\Visual Studio 2013\Projects\VanishBar\VanishBarUI\obj\Debug\VanishBar.pdb

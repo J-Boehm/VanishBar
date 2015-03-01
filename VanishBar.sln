@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VanishBar", "VanishBar\VanishBar.vcxproj", "{EEC78A76-FEEB-46CB-AE57-09952A5F011A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanishBarUI", "VanishBarUI\VanishBarUI.csproj", "{E20A439F-CFE7-4E8D-8CCD-3C2C0702EBBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanishBar", "VanishBarUI\VanishBar.csproj", "{E20A439F-CFE7-4E8D-8CCD-3C2C0702EBBA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VanDLL", "VanDLL\VanDLL.vcxproj", "{770C9C2F-0010-4296-8F91-44D5A4CD8DAE}"
 EndProject
@@ -23,20 +21,6 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Debug|ARM.ActiveCfg = Debug|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Debug|Mixed Platforms.Build.0 = Debug|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Debug|Win32.ActiveCfg = Debug|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Debug|Win32.Build.0 = Debug|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Debug|x64.ActiveCfg = Debug|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Release|Any CPU.ActiveCfg = Release|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Release|ARM.ActiveCfg = Release|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Release|Mixed Platforms.ActiveCfg = Release|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Release|Mixed Platforms.Build.0 = Release|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Release|Win32.ActiveCfg = Release|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Release|Win32.Build.0 = Release|Win32
-		{EEC78A76-FEEB-46CB-AE57-09952A5F011A}.Release|x64.ActiveCfg = Release|Win32
 		{E20A439F-CFE7-4E8D-8CCD-3C2C0702EBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E20A439F-CFE7-4E8D-8CCD-3C2C0702EBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E20A439F-CFE7-4E8D-8CCD-3C2C0702EBBA}.Debug|ARM.ActiveCfg = Debug|Any CPU
