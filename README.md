@@ -1,7 +1,7 @@
 # VanishBar
 ## A tool to hide the Windows taskbar
 
-VanishBar is a Win32 console application written in C++ that has the ability to hide or show the Windows taskbar. This could be helpful in situations like the following one: You're trying to run LiteStep on top of Windows Explorer and you're having the problem that the Windows Explorer flickers through LiteStep.
+VanishBar is a WPF application written in C# that uses a DLL that is written in C++/CLI. It has the ability to hide or show the Windows taskbar. This could be helpful in situations like the following one: You're trying to run LiteStep on top of Windows Explorer and you're having the problem that the Windows Explorer flickers through LiteStep.
 
 ### How to use it
 
